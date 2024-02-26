@@ -14,6 +14,7 @@ $currentUserId = 1;
 $id = $_GET['id'];
 
 $note = $db->query("select * from notes where id = {$id}")->findOrFail();
+//$note = $db->query("select * from notes")->findOrFail();
 
 //dd($note);
 
