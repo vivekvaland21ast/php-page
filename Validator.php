@@ -6,7 +6,7 @@ class Validator
     {
         $value = trim($value);
 
-        return strlen($value) >= $min && strlen($value) <= $min;
+        return strlen($value) >= $min && strlen($value) <= $max;
     }
 
     public static function email($value)
