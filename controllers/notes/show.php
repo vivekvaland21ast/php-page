@@ -22,4 +22,4 @@ authorize($note['user_id'] === $currentUserId);
 
 
 
-require "./Views/note.view.php";
+require "./Views/notes/show.view.php";

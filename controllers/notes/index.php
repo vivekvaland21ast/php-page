@@ -15,4 +15,4 @@ $notes = $db->query('select * from notes where user_id = 1')->get();
 
 //dd($notes);
 
-require "./Views/notes.view.php";
+require "./Views/notes/index.view.php";

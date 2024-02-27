@@ -1,6 +1,6 @@
-<?php require('Partials/header.php') ?>
-<?php require('Partials/nav.php') ?>
-<?php require('Partials/banner.php') ?>
+<?php require('views/Partials/header.php') ?>
+<?php require('views/Partials/nav.php') ?>
+<?php require('views/Partials/banner.php') ?>
 
 
 <main>
@@ -14,9 +14,7 @@
                                 <div>
                                     <label for="body" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
                                     <div class="mt-2">
-                                        <textarea id="body" name="body" rows="5" cols="30" placeholder="Write a your notes here...." class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                            <?= $_POST['body']?? '' ?>
-                                        </textarea>
+                                        <textarea id="body" name="body" rows="5" cols="30" placeholder="Write a your notes here...." class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><?= $_POST['body']?? '' ?></textarea>
 
                                         <?php if (isset($error['body'])) : ?>
                                             <p class="text-red-500 text-xs mt-2"><?= $error['body'] ?></p>
@@ -34,4 +32,4 @@
         </div>
     </div>
 </main>
-<?php require('Partials/footer.php') ?>
+<?php require('views/Partials/footer.php') ?>
