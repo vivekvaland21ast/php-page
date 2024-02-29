@@ -27,7 +27,7 @@
 
                                     </div>
                                     <!-- <p class="mt-3 text-sm leading-4 text-gray-600">Write a your notes here....</p> -->
-                                    <button type="submit"
+                                    <button type="submit" onclick="alert()"
                                         class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5 sm:col-span-4">Create</button>
                                 </div>
                             </div>
@@ -38,5 +38,13 @@
         </div>
     </div>
 </main>
-
+<script>
+    function alert() {
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
+    }
+</script>
 <?php require('views/Partials/footer.php') ?>

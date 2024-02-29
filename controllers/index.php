@@ -3,4 +3,4 @@
 
 $heading = "Homepage";
 
-require "./Views/index.view.php";
+require view("index.view.php");
