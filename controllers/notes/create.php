@@ -11,11 +11,6 @@ $heading = "Create a note";
 //dd(Validator::email('sdgffg@gmail.com'));
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $error = [
-        "test" => 1112
-    ];
-
-    
 
     if (!Validator::string($_POST['body'], 1, 1000)) {
         $error['body'] = 'The body cannot be more than 1000 characters.';
