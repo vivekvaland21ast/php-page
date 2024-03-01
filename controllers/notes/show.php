@@ -4,11 +4,10 @@
 // echo $_SERVER['REQUEST_URI'];
 // echo "</pre>";
 
-$config = require("config.php");
+$config = require base_path("config.php");
 
 $db = new Database($config['database']);
 
-$heading = "Note";
 $currentUserId = 1;
 
 $id = $_GET['id'];
@@ -21,5 +20,7 @@ $note = $db->query("select * from notes where id = {$id}")->findOrFail();
 authorize($note['user_id'] === $currentUserId);
 
 
-
-require "./Views/notes/show.view.php";
+view("notes/show.view.php",[
+    'heading'=> 'Note',
+    'note'=> $note
+]);

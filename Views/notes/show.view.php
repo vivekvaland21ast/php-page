@@ -1,6 +1,6 @@
-<?php require('views/Partials/header.php') ?>
-<?php require('views/Partials/nav.php') ?>
-<?php require('views/Partials/banner.php') ?>
+<?php require base_path('views/Partials/header.php') ?>
+<?php require base_path('views/Partials/nav.php') ?>
+<?php require base_path('views/Partials/banner.php') ?>
 
 
 <main>
@@ -16,4 +16,4 @@
 
     </div>
 </main>
-<?php require('views/Partials/footer.php') ?>
+<?php require base_path('views/Partials/footer.php') ?>
