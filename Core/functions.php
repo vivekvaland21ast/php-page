@@ -1,5 +1,7 @@
 <?php
 
+use Core\Response;
+
 function isUrl($value)
 {
     return $_SERVER['REQUEST_URI'] === $value;
@@ -11,7 +13,13 @@ function dd($value)
     echo "<pre>";
     die();
 }
+function abort($code = 404)
+{
+    http_response_code($code);
 
+    require base_path("Views/{$code}.php");
+    die();
+}
 function authorize($condition, $status = Response::FORBIDDEN)
 {
     if (!$condition) {
@@ -26,7 +34,7 @@ function base_path($path)
 
 function view($path, $attributes = [])
 {
-    
+
     extract($attributes);
     require base_path('Views/' . $path);
 }

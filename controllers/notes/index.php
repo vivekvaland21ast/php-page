@@ -4,6 +4,8 @@
 // echo $_SERVER['REQUEST_URI'];
 // echo "</pre>";
 
+use Core\Database;
+
 $config = require base_path("config.php");
 
 $db = new Database($config['database']);
