@@ -15,9 +15,8 @@
         </p>
 
         <footer class="mt-6">
-            <button class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                <a href="/note/edit?id=<?= $note['id'] ?>">Edit</a>
-            </button>
+            <a class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                href="/note/edit?id=<?= $note['id'] ?>">Edit</a>
         </footer>
         <!-- <form class="mt-6" method="POST">
             <input type="hidden" name="_method" value="DELETE">

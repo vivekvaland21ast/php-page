@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 const BASE_PATH = __DIR__ . '/../';
 
 // echo BASE_PATH . 'Core/functions.php';
