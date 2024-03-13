@@ -26,6 +26,7 @@ $db->query('INSERT INTO notes(body, user_id) VALUES(:body, :user_id)', [
     'user_id' => 1
 ]);
 
+$_SESSION['_flash'] = $form->errors();
 header('location:/notes');
 die();
 
